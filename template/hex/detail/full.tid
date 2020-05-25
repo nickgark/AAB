@@ -1,0 +1,213 @@
+created: 20180125095908604
+modified: 20200525193441260
+tags: 
+title: $:/plugins/nickgark/AAB/template/hex/detail/full
+type: text/vnd.tiddlywiki
+
+\define svglink()
+#$(currentTiddler)$
+\end
+\define starportlink(class)
+<a xlink:href="#Class $class$ Starport">
+    <text x="0" y="-175" text-anchor="middle" style="font-family: sans-serif" font-size="150" stroke="white" stroke-width="30" stroke-linejoin="round" class={{!!allegiance}}>$class$</text>
+    <text x="0" y="-175" text-anchor="middle" style="font-family: sans-serif" font-size="150">$class$</text>
+  </a>
+\end
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-500 -430 1000 860">
+ <defs>
+    <clipPath id="hexbox">
+      <path d="M 500 0 L 250 430 -250 430 -500 0 -250 -430 250 -430 z"/>
+    </clipPath>
+  </defs>
+  <$list filter="[all[current]field:zone[A]]">
+    <a xlink:href="#Amber%20Zone">
+      <circle cx="0" cy="0" r="350" fill="none" stroke="orange" stroke-width="30" opacity="1"/>
+    </a>
+  </$list>
+  <$list filter="[all[current]field:zone[R]]">
+    <a xlink:href="#Red%20Zone">
+      <circle cx="0" cy="0" r="350" fill="none" stroke="red" stroke-width="30" opacity="1"/>
+    </a>
+  </$list>
+  <$list filter="[all[current]field:hydrographics[0]!field:diameter[0]]">
+    <a xlink:href=<<svglink>> >
+      <circle cx="0" cy="0" r="200" fill="white" class={{!!allegiance}}/>
+      <circle cx="0" cy="0" r="100" fill="white" stroke="black" stroke-width="20"/>
+    </a>
+  </$list>
+  <$list filter="[all[current]field:hydrographics[1]] [all[current]field:hydrographics[2]] [all[current]field:hydrographics[3]] [all[current]field:hydrographics[4]] [all[current]field:hydrographics[5]] [all[current]field:hydrographics[6]] [all[current]field:hydrographics[7]] [all[current]field:hydrographics[8]] [all[current]field:hydrographics[9]] [all[current]field:hydrographics[A]]">
+    <a xlink:href=<<svglink>> >
+      <circle cx="0" cy="0" r="200" fill="white" class={{!!allegiance}}/>
+      <circle cx="0" cy="0" r="100" fill="black" stroke="black" stroke-width="20"/>
+    </a>
+  </$list>
+  <$list filter="[all[current]field:diameter[0]]">
+    <a xlink:href=<<svglink>> >
+      <circle cx="0" cy="0" r="200" fill="white" class={{!!allegiance}}/>
+      <circle cx="-120" cy="90" r="20" fill="black"/>
+      <circle cx="-60" cy="-90" r="20" fill="black"/>
+      <circle cx="-40" cy="0" r="20" fill="black"/>
+      <circle cx="-10" cy="120" r="20" fill="black"/>
+      <circle cx="20" cy="-60" r="20" fill="black"/>
+      <circle cx="50" cy="20" r="20" fill="black"/>
+      <circle cx="120" cy="90" r="20" fill="black"/>
+      <circle cx="140" cy="-50" r="20" fill="black"/>
+    </a>
+  </$list>
+  <a xlink:href=<<svglink>> >
+    <text x="0" y="-325" text-anchor="middle" style="font-family: sans-serif" stroke="white" stroke-linejoin="round" stroke-width="30" font-size="80" class={{!!allegiance}}><$transclude field="hex"/></text>
+    <text x="0" y="-325" text-anchor="middle" style="font-family: sans-serif" font-size="80"><$transclude field="hex"/></text>
+  </a>
+  <$macrocall $name="starportlink" class={{!!starport}}/>
+  <a xlink:href=<<svglink>> >
+    <$list filter="[all[current]regexp:tradecodes[Hi]]">
+      <text x="0" y="300" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase;" stroke="white" stroke-linejoin="round" stroke-width="30" font-size="120" clip-path="url(#hexbox)" class={{!!allegiance}}><$transclude field="name"/></text>
+      <$list filter="[all[current]regexp:tradecodes[Cp]] [all[current]regexp:tradecodes[Cs]] [all[current]regexp:tradecodes[Cx]]">
+        <text x="0" y="300" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase; fill:red;" font-size="120"><$transclude field="name"/></text>
+      </$list>
+      <$list filter="[all[current]!regexp:tradecodes[Cp]!regexp:tradecodes[Cs]!regexp:tradecodes[Cx]]">
+        <text x="0" y="300" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase; fill:black;" font-size="120"><$transclude field="name"/></text>
+      </$list>
+    </$list>
+    <$list filter="[all[current]!regexp:tradecodes[Hi]]">
+      <text x="0" y="300" text-anchor="middle" style="font-family: sans-serif; font-weight: bold;" stroke="white" stroke-linejoin="round" stroke-width="30" font-size="120" clip-path="url(#hexbox)" class={{!!allegiance}}><$transclude field="name"/></text>
+      <$list filter="[all[current]regexp:tradecodes[Cp]] [all[current]regexp:tradecodes[Cs]] [all[current]regexp:tradecodes[Cx]]">
+        <text x="0" y="300" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; fill: red" font-size="120"><$transclude field="name"/></text>
+      </$list>
+      <$list filter="[all[current]!regexp:tradecodes[Cp]!regexp:tradecodes[Cs]!regexp:tradecodes[Cx]]">
+        <text x="0" y="300" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; fill: black" font-size="120"><$transclude field="name"/></text>
+      </$list>
+    </$list>
+  </a>
+  <$list filter="[all[current]regexp:bases[S]]">
+    <a xlink:href="#Imperial%20Scout%20Base" xlink:title="Imperial Scout Base">
+      <g transform="translate(-175,-303)">
+        <path d="M 0 -50 L 43 25 -43 25 z" stroke="white" stroke-width="30" stroke-linejoin="round" class={{!!allegiance}}/>
+        <path d="M 0 -50 L 43 25 -43 25 z" fill="black"/>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:bases[W]]">
+    <a xlink:href="#Imperial%20Way%20Station">
+      <g transform="translate(-175,-303)">
+        <path d="M 0 -50 L 43 25 -43 25 z" stroke="white" stroke-width="30" stroke-linejoin="round" class={{!!allegiance}}/>
+        <path d="M 0 -50 L 43 25 -43 25 z" fill="red"/>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:bases[N]]">
+    <a xlink:href="#Imperial%20Naval%20Base">
+      <g transform="translate(-303,-175)">
+        <path d="M 0 -50 L 29 40 -47 -15 47 -15 -29 40 z" stroke-width="30" stroke="white" stroke-linejoin="round" class={{!!allegiance}}/>
+        <path d="M 0 -50 L 29 40 -47 -15 47 -15 -29 40 z" fill="black"/>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:bases[D]]">
+    <a xlink:href="#Imperial%20Naval%20Depot">
+      <g transform="translate(-303,-175)">
+        <path d="M 35 35 L -35 35 -35 -35 35 -35 z" stroke-width="30" stroke="white" stroke-linejoin="round" class={{!!allegiance}}/>
+        <path d="M 35 35 L -35 35 -35 -35 35 -35 z" fill="black"/>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:bases[K]]">
+    <a xlink:href="#Naval%20Base">
+      <g transform="translate(-303,-175)">
+        <path d="M 0 -50 L 25 0 0 50 -25 0 z" stroke="white" stroke-width="30" stroke-linejoin="round" class={{!!allegiance}}/>
+        <path d="M 0 -50 L 25 0 0 50 -25 0 z" fill="black"/>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:bases[M]]">
+    <a xlink:href="#Military%20Base">
+      <g transform="translate(-350,0)">
+        <circle cx="0" cy="0" r="40" stroke="white" stroke-width="30" stroke-linejoin="round" class={{!!allegiance}}/>
+        <circle cx="0" cy="0" r="40" fill="black"/>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]has[gasgiants]!field:gasgiants[0]]">
+    <a xlink:href="#Gas%20Giant">
+      <g transform="translate(175,-303)">
+        <circle cx="0" cy="0" r="40" stroke="white" stroke-width="30" stroke-linejoin="round" class={{!!allegiance}}/>
+	<path d="M -50 40 L 40 -50 50 -40 -40 50 z" stroke="white" stroke-width="30" stroke-linejoin="round" class={{!!allegiance}}/>
+        <circle cx="0" cy="0" r="40" fill="black"/>
+	<path d="M -50 40 L 40 -50 50 -40 -40 50 z" fill="black"/>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsA]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Alpha;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsB]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Beta;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsG]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Gamma;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsD]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Delta;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsE]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Epsilon;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsZ]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Zeta;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsH]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Eta;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[RsT]]">
+    <a xlink:href="#Imperial%20Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">&Theta;</text>
+      </g>
+    </a>
+  </$list>
+  <$list filter="[all[current]regexp:tradecodes[Rs$|Rs\s]]">
+    <a xlink:href="#Research%20Station">
+      <g transform="translate(303, -175)">
+        <circle cx="0" cy="0" r="50" stroke="white" fill="white" stroke-width="30" class={{!!allegiance}}/>
+        <text x="0" y="50" text-anchor="middle" style="font-family: sans-serif; font-weight: bold; text-transform: uppercase" font-size="100">R</text>
+      </g>
+    </a>
+  </$list>
+</svg>

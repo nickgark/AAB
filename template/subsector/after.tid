@@ -1,0 +1,7 @@
+created: 20171230112148230
+modified: 20200525194031951
+tags: 
+title: $:/plugins/nickgark/AAB/template/subsector/after
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="$:/plugins/nickgark/AAB/template/subsector/map" mode="block"/>

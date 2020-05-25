@@ -1,0 +1,67 @@
+created: 20200525173136498
+modified: 20200525194022086
+tags: 
+title: $:/plugins/nickgark/AAB/usage
+type: text/vnd.tiddlywiki
+
+The majority of the functionality provided by this plugin does not require extra markup in tiddlers, but uses the tags on the tiddlers to render structured information in tiddler fields in a reader-friendly manner. 
+
+!Tags
+
+The following tags produce some special behaviour when applied to tiddlers:
+
+* [[System]]
+* [[Subsector]]
+* [[Sector]]
+
+!Fields
+
+For each of the supported tags, the following are the fields required on tiddlers with those tags. Where necessary, this plugin contains data tiddlers that can be used to decode field values into human-readable text.
+
+!!System
+
+|!Field|!Description|
+|`name`|The name of the system|
+|`sector`|The sector containing the system|
+|`subsector`|The lettered subsector (A-P) containing the system|
+|`hex`|The four-digit hex location of the system|
+|`hx`|The X component of the hex location|
+|`hy`|The Y component of the hex location|
+|`starport`|The [[starport class|$:/plugins/nickgark/AAB/data/uwp/starport]]|
+|`diameter`|The [[diameter code|$:/plugins/nickgark/AAB/data/uwp/diameter]]|
+|`atmosphere`|The [[atmosphere code|$:/plugins/nickgark/AAB/data/uwp/atmosphere]]|
+|`hydrographics`|The [[hydrographics code|$:/plugins/nickgark/AAB/data/uwp/hydrographics]]|
+|`population`|The [[population exponent|$:/plugins/nickgark/AAB/data/uwp/population]]|
+|`government`|The [[government code|$:/plugins/nickgark/AAB/data/uwp/government]]|
+|`lawlevel`|The [[law level code|$:/plugins/nickgark/AAB/data/uwp/lawlevel]]|
+|`techlevel`|The [[tech level code|$:/plugins/nickgark/AAB/data/uwp/techlevel]]|
+|`zone`|The [[travel zone|$:/plugins/nickgark/AAB/data/uwp/travelzones]]|
+|`bases`|The [[bases|$:/plugins/nickgark/AAB/data/uwp/installations]] in the system (space-separated)|
+|`tradecodes`|The [[trade codes|$:/plugins/nickgark/AAB/data/uwp/tradecodes]] for the system (space separated)|
+|`popmult`|The population mantissa|
+|`belts`|The number of planetoid belts in the system|
+|`gasgiants`|The number of gas giants in the system|
+|`stars`|The stars in the system|
+|`worlds`|The number of worlds in the system (other than the main world)|
+|`demographics`|A breakdown of the system population|
+|`allegiance`|The four-character [[allegiance code|$:/plugins/nickgark/AAB/data/uwp/allegiances]]|
+|`corporation`|The corporation controlling a system|
+|`client`|The polity controlling a client state system|
+|`ownerhex`|The hex location of a controlling system|
+|`ownersector`|The sector of a controlling system|
+|`homeworld`|Links to any sophonts for whom this is a homeworld|
+
+Note that the characters used in the `bases` field should appear in the `abbreviation` field of a tiddler tagged with [[Installation]].
+
+!!Subsector
+
+|!Field|!Description|
+|`name`|The name of the subsector|
+|`sector`|The sector containing the subsector|
+|`subsector`|The lettered position (A-P) of the subsector|
+
+!!Sector
+
+|!Field|!Description|
+|`sx`|The X position of the sector relative to Core. (+ve is trailing)|
+|`sy`|The Y position of the sector relative to Core. (+ve is rimward)|

@@ -1,0 +1,25 @@
+created: 20161123143044337
+modified: 20200525191813029
+title: $:/plugins/nickgark/AAB/data/uwp/lawlevel
+type: application/x-tiddler-dictionary
+
+0: No Law (No weapon prohibitions)
+1: Low law (Prohibition of portable energy weapons)
+2: Low law (Prohibition of "portable" weapons)
+3: Low law (Prohibition of acid, fire, gas)
+4: Moderate law (Prohibition of laser, beam)
+5: Moderate law (No Shock, EMP, Rad, Mag, Grav)
+6: Moderate law (Prohibition of machine guns)
+7: Moderate law (Prohibition of pistols)
+8: High law (Open display of weapons prohibited)
+9: High law (Possession of any weapon outside one's residence is prohibited)
+A: Extreme law (All weapons prohibited)
+B: Extreme law (Continental passports required)
+C: Extreme law (Unrestricted invasion of privacy)
+D: Extreme law (Paramilitary law enforcement)
+E: Extreme law (Full-fledged police state)
+F: Extreme law (Daily life rigidly controlled)
+G: Extreme law (Disproportionate punishment)
+H: Extreme law (Legalized oppressive practices)
+J: Extreme law (Routine oppression)
+?: Unknown

@@ -1,0 +1,122 @@
+created: 20180125122511436
+modified: 20200525193314739
+tags: 
+title: $:/plugins/nickgark/AAB/template/sector/map
+type: text/vnd.tiddlywiki
+
+\define link()
+#$(currentTiddler)$
+\end
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-30 -30 666 931" width="auto">
+  <path d="M -4 -4 L 610 -4 610 875 -4 875 z" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 152 -18 L -18 -18 -18 290" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 455 -18 L 624 -18 624 290" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 152 889 L -18 889 -18 581" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 455 889 L 624 889 624 581" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 153 0 L 153 871" stroke="black" stroke-width="1"/>
+  <path d="M 303 0 L 303 871" stroke="black" stroke-width="1"/>
+  <path d="M 453 0 L 453 871" stroke="black" stroke-width="1"/>
+  <path d="M 0 215 L 606 215" stroke="black" stroke-width="1"/>
+  <path d="M 0 430 L 606 430" stroke="black" stroke-width="1"/>
+  <path d="M 0 645 L 606 645" stroke="black" stroke-width="1"/>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[A]]">
+<a xlink:href=<<link>> >
+<text x="76" y="108" transform="rotate(-60, 76, 108)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[B]]">
+<a xlink:href=<<link>> >
+<text x="229" y="108" transform="rotate(-60, 229, 108)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[C]]">
+<a xlink:href=<<link>> >
+<text x="379" y="108" transform="rotate(-60, 379, 108)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[D]]">
+<a xlink:href=<<link>> >
+<text x="529" y="108" transform="rotate(-60, 529, 108)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[E]]">
+<a xlink:href=<<link>> >
+<text x="76" y="323" transform="rotate(-60, 76, 323)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[F]]">
+<a xlink:href=<<link>> >
+<text x="229" y="323" transform="rotate(-60, 229, 323)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[G]]">
+<a xlink:href=<<link>> >
+<text x="379" y="323" transform="rotate(-60, 379, 323)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[H]]">
+<a xlink:href=<<link>> >
+<text x="529" y="323" transform="rotate(-60, 529, 323)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[I]]">
+<a xlink:href=<<link>> >
+<text x="76" y="538" transform="rotate(-60, 76, 538)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[J]]">
+<a xlink:href=<<link>> >
+<text x="229" y="538" transform="rotate(-60, 229, 538)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[K]]">
+<a xlink:href=<<link>> >
+<text x="379" y="538" transform="rotate(-60, 379, 538)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[L]]">
+<a xlink:href=<<link>> >
+<text x="529" y="538" transform="rotate(-60, 529, 538)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[M]]">
+<a xlink:href=<<link>> >
+<text x="76" y="758" transform="rotate(-60, 76, 758)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[N]]">
+<a xlink:href=<<link>> >
+<text x="229" y="758" transform="rotate(-60, 229, 758)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[O]]">
+<a xlink:href=<<link>> >
+<text x="379" y="758" transform="rotate(-60, 379, 758)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter="[tag[Subsector]sector<currentTiddler>subsector[P]]">
+<a xlink:href=<<link>> >
+<text x="529" y="758" transform="rotate(-60, 529, 758)" text-anchor="middle" font-size="30" fill="grey">{{!!name}}</text>
+</a>
+</$list>
+<$list filter=<<adjacentsector 0 -1>> >
+<a xlink:href=<<link>> >
+<text x="303" y="-14" text-anchor="middle" font-size="20" style="font-weight:bold; text-transform: uppercase;">{{!!title}}</text>
+</a>
+</$list>
+<$list filter=<<adjacentsector -1 0>> >
+<a xlink:href=<<link>> >
+<text x="-14" y="430" text-anchor="middle" font-size="20" style="font-weight:bold; text-transform: uppercase;" transform="rotate(-90, -14 430)">{{!!title}}</text>
+</a>
+</$list>
+<$list filter=<<adjacentsector 1 0>> >
+<a xlink:href=<<link>> >
+<text x="620" y="430" text-anchor="middle" font-size="20" style="font-weight:bold; text-transform: uppercase;" transform="rotate(90, 620 430)">{{!!title}}</text>
+</a>
+</$list>
+<$list filter=<<adjacentsector 0 1>> >
+<a xlink:href=<<link>> >
+<text x="303" y="900" text-anchor="middle" font-size="20" style="font-weight:bold; text-transform: uppercase;">{{!!title}}</text>
+</a>
+</$list>
+</svg>

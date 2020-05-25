@@ -1,0 +1,131 @@
+created: 20180125090515174
+modified: 20200525192809357
+tags: $:/tags/Stylesheet
+title: $:/plugins/nickgark/AAB/style/map
+type: text/css
+
+.AsIf,
+.AsMw,
+.AsOf,
+.AsSF,
+.AsSc,
+.AsT0,
+.AsT1,
+.AsT2,
+.AsT3,
+.AsT4,
+.AsT5,
+.AsT6,
+.AsT7,
+.AsT8,
+.AsT9,
+.AsTA,
+.AsTv,
+.AsTz,
+.AsVc,
+.AsWc,
+.AsXX
+{ fill: #ffc; stroke: #ffc;}
+
+
+.BoWo { fill: #fee; stroke: #fee; }
+
+.CsHv { fill: #fef; stroke: #fef; }
+.CsIm { fill: #fee; stroke: #fee; }
+.CsTw { fill: #efe; stroke: #efe; }
+.CsZh { fill: #eef; stroke: #eef; }
+
+.DaCf { fill: #cff; stroke: #cff; }
+
+.HvFd { fill: #fcf; stroke: #fcf; }
+
+.ImAp, 
+.ImDa,
+.ImDc,
+.ImDd,
+.ImDg,
+.ImDi,
+.ImDs,
+.ImDv,
+.ImLa,
+.ImLc,
+.ImLu,
+.ImSy,
+.ImVd
+{ fill: #fcc; stroke: #fcc}
+
+.JAOz,
+.JAsi,
+.JCoK,
+.JHhk,
+.JLum,
+.JMen,
+.JPSt,
+.JRar,
+.JUkh,
+.JVug,
+.JuHl,
+.JuPr,
+.JuRu
+{ fill: #9df; stroke: #9df; }
+
+.Kk2k { fill: #cfc; stroke: #cfc; }
+
+.SoCf,
+.SoBF,
+.SoCT,
+.SoFr,
+.SoHn,
+.SoKv,
+.SoNS,
+.SoQu,
+.SoRD,
+.SoRZ,
+.SoWu
+{ fill: #fda; stroke: #fda; }
+
+.SwCf { fill: #efa; stroke: #efa; }
+
+.V17D,
+.V40S,
+.VARC,
+.VAnP,
+.VAug,
+.VBkA,
+.VCKd,
+.VDzF,
+.VFFD,
+.VGoT,
+.VIrM,
+.VJoF,
+.VLIn,
+.VLPr,
+.VNgC,
+.VOpp,
+.VPGa,
+.VRo5,
+.VRrS,
+.VRuk,
+.VSDp,
+.VSEq,
+.VThE,
+.VTzE,
+.VUru,
+.VVar,
+.VVoS,
+.VWP2,
+.VWan
+{ fill: #df9; stroke #df9; }
+
+.ZhAx,
+.ZhCa,
+.ZhCh,
+.ZhCo,
+.ZhIN,
+.ZhIa,
+.ZhJp,
+.ZhMe,
+.ZhOb,
+.ZhSh,
+.ZhVQ
+{ fill: #ccf; stroke: #ccf; }

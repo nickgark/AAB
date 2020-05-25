@@ -1,0 +1,47 @@
+created: 20200525173216627
+modified: 20200525194206761
+tags: 
+title: $:/plugins/nickgark/AAB/data
+type: text/vnd.tiddlywiki
+
+The internal data representation used by the plugin is significantly different to that used by the [[Traveller Map|http://travellermap.com]]; it does not use either of the [[T5SS formats|https://travellermap.com/doc/secondsurvey]] for world data directly, but relies on a number of ancillary [[scripts|$:/plugins/nickgark/AAB/scripts]] to transform these into JSON files that can be imported into Tiddlywiki.
+
+(the scripts need some tidying before they're ready for release)
+
+!TiddlyWiki JSON Format
+
+Tiddlywiki can import JSON files that contain multiple tiddlers. The general format for these is a list of dictionaries, where each dictionary defines a different tiddler:
+
+```
+[
+  {
+    "title": "title of the first tiddler",
+    "text": "text of the first tiddler",
+    "tags": "tags for the first tiddler"
+  },
+  {
+    "title": "title of the second tiddler",
+    "text": "text of the second tiddler",
+    "tags": "tags for the third tiddler"
+  },
+
+  ...
+
+]
+```
+
+The contents of the `text` field can contain [[wikitext formatting|https://tiddlywiki.com/#WikiText]]; note that there are some syntactic differences between the wikitext used in TiddlyWiki, and that used in MediaWiki.
+
+Other field values (see [[Usage|$:/plugins/nickgark/AAB/usage]]) may be included in the dictionaries. For example, the tiddler for the [[Spinward Marches]] might be as follows:
+
+```
+  {
+    "title": "Spinward Marches",
+    "text": "text of this tiddler",
+    "sx": "-4",
+    "sy": "-1",
+    "tags": "Sector"
+  }
+```
+
+Note that TiddlyWiki does not apply version control to tiddlers, nor is there any warning that an imported tiddler will override an existing tiddler of the same name.

@@ -1,0 +1,10 @@
+created: 20180122172037491
+modified: 20200525193342352
+title: $:/plugins/nickgark/AAB/template/hex/outline
+type: text/vnd.tiddlywiki
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="-500 -430 1000 860">
+  <path d="M 500 0 L 250 430 -250 430 -500 0 -250 -430 250 -430 z" fill="none" stroke="black" stroke-width="10"/>
+</svg>

@@ -1,0 +1,7 @@
+created: 20171230112124232
+modified: 20200525193230852
+tags: 
+title: $:/plugins/nickgark/AAB/template/subsector/before
+type: text/vnd.tiddlywiki
+
+Subsector {{!!subsector}} of <$link to={{!!sector}}>{{!!sector}}</$link>

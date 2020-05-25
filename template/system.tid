@@ -1,0 +1,30 @@
+created: 20161123160328267
+modified: 20200525203434689
+title: $:/plugins/nickgark/AAB/template/system
+type: text/vnd.tiddlywiki
+
+<table style="width: 100%">
+<!--<tr><th style="text-align: left;">Hex</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/template/hex/large"/></td></tr>-->
+<tr><th style="text-align: left;">Sector</th><td><$link to={{!!sector}}>{{!!sector}}</$link></td></tr>
+<tr><th style="text-align: left;">Subsector</th><td><$list filter="[tag[Subsector]sector{!!sector}subsector{!!subsector}]"><$link to=<<currentTiddler>> ><<currentTiddler>></$link></$list></td></tr>
+<tr><th style="text-align: left;">Allegiance</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/allegiances" index={{!!allegiance}} /><$list filter="[all[current]regexp:allegiance[^Cs]has[client]]"> (<$link to={{!!client}}>{{!!client}}</$link>)</$list></td></tr>
+<tr><th style="text-align: left;">Stars</th><td>{{!!stars}}</td></tr>
+<tr><th style="text-align: left;">UWP</th><td>{{!!starport}}{{!!diameter}}{{!!atmosphere}}{{!!hydrographics}}{{!!population}}{{!!government}}{{!!lawlevel}}-{{!!techlevel}}</td></tr>
+<tr><th style="text-align: left;">Starport</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/starport" index={{!!starport}} /></td></tr>
+<tr><th style="text-align: left;">Diameter</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/diameter" index={{!!diameter}} /></td></tr>
+<tr><th style="text-align: left;">Atmosphere</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/atmosphere" index={{!!atmosphere}} /></td></tr>
+<tr><th style="text-align: left;">Hydrographics</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/hydrographics" index={{!!hydrographics}} /></td></tr>
+<tr><th style="text-align: left;">Population</th><td>{{!!popmult}}<$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/population" index={{!!population}} />
+<$list filter="[all[current]has[demographics]]"><br/>{{!!demographics}}</$list></td></tr>
+<tr><th style="text-align: left;">Government</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/government" index={{!!government}} />
+<$list filter="[all[current]has[ownerhex]]"><$list filter="[tag[System]hex{!!ownerhex}sector{!!ownersector}]"><br/>Controlled by <$link to=<<currentTiddler>> ><<currentTiddler>></$link></$list></$list><$list filter="[all[current]government[1]has[corporation]]"><br/>Controlled by <$link to={{!!corporation}}>{{!!corporation}}</$link></$list></td></tr>
+<tr><th style="text-align: left;">Law Level</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/lawlevel" index={{!!lawlevel}} /></td></tr>
+<tr><th style="text-align: left;">Tech Level</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/techlevel" index={{!!techlevel}} /></td></tr>
+<tr><th style="text-align: left;">Trade Codes</th><td><$list filter="[list[!!tradecodes]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/tradecodes" index=<<currentTiddler>> /><br/></$list></td></tr>
+<$list filter="[all[current]has[homeworld]]"><tr><th style="text-align: left;">Homeworld</th><td><$list filter="[list[!!homeworld]]"><$link><<currentTiddler>></$link><br/></$list></td></tr></$list>
+<tr><th style="text-align: left;">Travel Zone</th><td><$list filter="[list[!!zone]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/travelzones" index=<<currentTiddler>> /><br/></$list></td></tr>
+<tr><th style="text-align: left;">Bases</th><td><$list filter="[list[!!bases]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/installations" index=<<currentTiddler>> /><br/></$list>
+<$list filter="[all[current]has[routes]regexp:allegiance[Im]]">[[Imperial Express Boat Station]]</$list>
+<$list filter="[all[current]has[routes]regexp:allegiance[Zh]]">[[Zhodani Relay Station]]</$list>
+</td></tr>
+</table>

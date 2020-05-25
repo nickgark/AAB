@@ -1,0 +1,16 @@
+created: 20180125111555236
+modified: 20200525193502960
+tags: 
+title: $:/plugins/nickgark/AAB/template/hex/background
+type: text/vnd.tiddlywiki
+
+\define svglink()
+#$(currentTiddler)$
+\end
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="-500 -430 1000 860">
+  <a xlink:href=<<svglink>> >
+    <path d="M 500 0 L 250 430 -250 430 -500 0 -250 -430 250 -430 z" fill="white" class={{!!allegiance}} />
+  </a>
+</svg>

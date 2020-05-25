@@ -1,0 +1,15 @@
+created: 20171230111708106
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20200525193530129
+tags: $:/tags/ViewTemplate
+title: $:/plugins/nickgark/AAB/template/before
+type: text/vnd.tiddlywiki
+
+\define folded-state()
+$:/state/folded/$(currentTiddler)$
+\end
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" state=<<folded-state>> text="hide" retain="yes" animate="yes">
+<$list filter="[all[current]tag[Subsector]]">
+<$transclude tiddler="$:/plugins/nickgark/AAB/template/subsector/before" mode="block"/>
+</$list>
+</$reveal>

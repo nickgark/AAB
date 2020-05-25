@@ -1,0 +1,20 @@
+created: 20180125122537758
+modified: 20200525193256492
+tags: 
+title: $:/plugins/nickgark/AAB/template/sector/map/full
+type: text/vnd.tiddlywiki
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-30 -30 666 931" width="auto">
+  <path d="M -4 -4 L 610 -4 610 875 -4 875 z" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 152 -18 L -18 -18 -18 290" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 455 -18 L 624 -18 624 290" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 152 889 L -18 889 -18 581" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M 455 889 L 624 889 624 581" fill="none" stroke="black" stroke-width="8"/>
+  <$macrocall $name="drawsector" $type="text/vnd.tiddlywiki" $output="text/html"/>
+  <path d="M 153 0 L 153 871" stroke="black" stroke-width="1"/>
+  <path d="M 303 0 L 303 871" stroke="black" stroke-width="1"/>
+  <path d="M 453 0 L 453 871" stroke="black" stroke-width="1"/>
+  <path d="M 0 215 L 606 215" stroke="black" stroke-width="1"/>
+  <path d="M 0 430 L 606 430" stroke="black" stroke-width="1"/>
+  <path d="M 0 645 L 606 645" stroke="black" stroke-width="1"/>
+</svg>
