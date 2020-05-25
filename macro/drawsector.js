@@ -1,8 +1,5 @@
 /*\
-created: 20180124105011895
 title: $:/plugins/nickgark/AAB/macro/drawsector
-tags: 
-modified: 20200525193733284
 type: application/javascript
 module-type: macro
 \*/

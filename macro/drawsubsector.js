@@ -1,9 +1,6 @@
 /*\
-created: 20180124090131908
 type: application/javascript
 title: $:/plugins/nickgark/AAB/macro/drawsubsector
-tags: 
-modified: 20200525193703656
 module-type: macro
 \*/
 /*

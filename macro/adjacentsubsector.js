@@ -1,9 +1,6 @@
 /*\
-created: 20180126122550595
 type: application/javascript
 title: $:/plugins/nickgark/AAB/macro/adjacentsubsector
-tags: 
-modified: 20200525193824565
 module-type: macro
 \*/
 /*

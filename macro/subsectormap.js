@@ -1,9 +1,6 @@
 /*\
-created: 20181121104109374
 type: application/javascript
 title: $:/plugins/nickgark/AAB/macro/subsectormap
-tags: 
-modified: 20200525193624524
 module-type: macro
 \*/
 /*

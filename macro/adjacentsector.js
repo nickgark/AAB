@@ -1,8 +1,5 @@
 /*\
-created: 20180125151224451
 title: $:/plugins/nickgark/AAB/macro/adjacentsector
-tags: 
-modified: 20200525194149725
 type: application/javascript
 module-type: macro
 \*/

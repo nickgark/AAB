@@ -1,8 +1,5 @@
 /*\
-created: 20180225215709812
 title: $:/plugins/nickgark/AAB/macro/drawroute
-tags: 
-modified: 20200525193932861
 type: application/javascript
 module-type: macro
 \*/
