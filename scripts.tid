@@ -1,4 +1,120 @@
 title: $:/plugins/nickgark/AAB/scripts
 type: text/vnd.tiddlywiki
 
-Information about scripts TBD
+!sys2tids
+
+Generates system tiddlers from TravellerMap.
+
+!!Usage
+
+`sys2tids.py [-h] [-a] [-r] [-m {M0,M990,M1105,M1120,M1201,M1248,M1900}] [sectors]`
+
+;`sectors`               
+:Sectors for which system tiddlers are to be generated
+;`-h`, `--help`
+:show this help message and exit
+;`-a`, `--all`
+:Generate routes for all sectors
+;`-r`, `--routes`
+:Generate route information for systems
+;`-m`, `--milieu`
+:Milieu for system data
+
+!!Sample Output
+
+```
+[
+    {
+        "title": "Errere (Spinward Marches 0103)",
+        "name": "Errere",
+        "sector": "Spinward Marches",
+        "subsector": "A",
+        "hex": "0103",
+        "hx": "01",
+        "hy": "03",
+        "starport": "B",
+        "diameter": "5",
+        "atmosphere": "6",
+        "hydrographics": "3",
+        "population": "6",
+        "popmult": "9",
+        "government": "6",
+        "ownersector": "Spinward Marches",
+        "ownerhex": "0304",
+        "lawlevel": "4",
+        "techlevel": "B",
+        "zone": "",
+        "bases": "K M",
+        "tradecodes": "Ni Ri",
+        "importance": "3",
+        "resources": "9",
+        "labour": "5",
+        "infrastructure": "7",
+        "efficiency": "+1",
+        "homogeneity": "4",
+        "acceptance": "9",
+        "strangeness": "3",
+        "symbols": "9",
+        "stars": "M1 V M4 V",
+        "worlds": "9",
+        "belts": "1",
+        "gasgiants": "0",
+        "allegiance": "ZhIN",
+        "routes": "0304 3201",
+        "tags": "System"
+    },
+    ...
+]
+```
+
+!secs2tids
+
+Generate sector and subsector tiddlers from TravellerMap.
+
+!!Usage
+
+`secs2tids.py [-h] [-s]`
+
+;`-h`, `--help`
+:show this help message and exit
+;`-s`, `--subsectors`
+:generate subsector tiddlers
+
+!!Sample Output
+
+```
+[
+    ...
+    {
+        "sector": "Spinward Marches",
+        "subsector": "P",
+        "name": "Trin's Veil",
+        "title": "Trin's Veil/Spinward Marches",
+        "tags": "Subsector"
+    },
+    {
+        "title": "Spinward Marches",
+        "sx": -4,
+        "sy": -1,
+        "tags": "Sector"
+    },
+		...
+]
+```
+
+!mergetids
+
+Merge two json files of tiddlers.
+
+!!Usage
+
+`mergetids.py [-h] [-k KEY] primary secondary`
+
+;`primary`
+:Primary json tiddler file (to which fields will be added)
+;`secondary`
+:Additional json tiddler file containing fields which will be added to (or override) fields in the primary file
+;`-h`, `--help`         
+:Show this help message and exit
+;`-k KEY`, `--key KEY`  
+:Key field on which to merge tiddlers
