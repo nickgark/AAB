@@ -1,0 +1,15 @@
+title: $:/plugins/nickgark/AAB/data/uwp/efficiency
+type: application/x-tiddler-dictionary
+
+-5:Extremely poor
+-4:Very poor
+-3:Poor
+-2:Fair
+-1:Average
++0:Average
++1:Average
++2:Good
++3:Improved
++4:Advanced
++5:Very advanced
+?:Unknown

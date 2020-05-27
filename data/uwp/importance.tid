@@ -1,0 +1,13 @@
+title: $:/plugins/nickgark/AAB/data/uwp/importance
+type: application/x-tiddler-dictionary
+
+-3:Very unimportant
+-2:Very unimportant
+-1:Unimportant
+0:Unimportant
+1:Ordinary
+2:Ordinary
+3:Ordinary
+4:Important
+5:Very important
+?:Unknown
