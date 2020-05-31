@@ -2,3 +2,4 @@ title: $:/plugins/nickgark/AAB/history
 type: text/vnd.tiddlywiki
 
 * ''0.1.0'' -- Initial version, migrated from previous development.
+* ''1.0.0'' -- First full release, following rewrite of map-rendering.

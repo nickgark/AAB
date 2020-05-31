@@ -1,9 +1,7 @@
 /*\
-created: 20200528131240246
 type: application/javascript
 title: $:/plugins/nickgark/AAB/macro/subsector
 tags: 
-modified: 20200528212726073
 module-type: macro
 \*/
 (function() {

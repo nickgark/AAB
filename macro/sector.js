@@ -1,8 +1,6 @@
 /*\
-created: 20200531102740734
 title: $:/plugins/nickgark/AAB/macro/sector
 type: application/javascript
-modified: 20200531102753034
 tags: 
 module-type: macro
 \*/
