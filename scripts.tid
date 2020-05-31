@@ -1,6 +1,8 @@
 title: $:/plugins/nickgark/AAB/scripts
 type: text/vnd.tiddlywiki
 
+The following scripts are available from [[https://github.com/nickgark/AAB-scripts]].
+
 !sys2tids
 
 Generates system tiddlers from TravellerMap.
