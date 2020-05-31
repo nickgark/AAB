@@ -13,10 +13,10 @@ $:/state/folded/$(currentTiddler)$
 </$tiddler>
 </$list>
 <$list filter="[all[current]tag[Subsector]]">
-<$transclude tiddler="$:/plugins/nickgark/AAB/template/subsector/after" mode="block"/>
+<subsector>>
 </$list>
 <$list filter="[all[current]tag[Sector]]">
-<$transclude tiddler="$:/plugins/nickgark/AAB/template/sector/after" mode="block"/>
+<<sector>>
 </$list>
 <$list filter="[all[current]tag[Cluster]][all[current]tag[Main]]">
 <$transclude tiddler="$:/plugins/nickgark/AAB/template/cluster" mode="block"/>

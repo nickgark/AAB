@@ -1,4 +1,0 @@
-title: $:/plugins/nickgark/AAB/template/sector/after
-type: text/vnd.tiddlywiki
-
-<$transclude tiddler="$:/plugins/nickgark/AAB/template/sector/map" mode="block"/>

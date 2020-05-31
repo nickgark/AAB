@@ -8,6 +8,6 @@ $:/state/folded/$(currentTiddler)$
 \end
 <$reveal tag="div" class="tc-tiddler-body" type="nomatch" state=<<folded-state>> text="hide" retain="yes" animate="yes">
 <$list filter="[all[current]tag[Subsector]]">
-<$transclude tiddler="$:/plugins/nickgark/AAB/template/subsector/before" mode="block"/>
+Subsector {{!!subsector}} of <$link to={{!!sector}}>{{!!sector}}</$link>
 </$list>
 </$reveal>
