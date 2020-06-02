@@ -14,8 +14,8 @@ The plugin includes specific templates for the rendering of:
 
 The data for these templates is stored as [[tiddler fields|$:/plugins/nickgark/AAB/usage]], thus allowing the separation of structured data from the unstructured text in the library data entries.
 
-A number of python [[scripts|$:/plugins/nickgark/AAB/scripts]] for converting T5SS data from TravellerMap are available in a [[separate repository|https://github.com/nickgark/AAB-scripts]].
-
+The source for this plugin is available on [[Github|https://github.com/nickgark/AAB]]. A number of python [[scripts|$:/plugins/nickgark/AAB/scripts]] for converting T5SS data from TravellerMap are available in a [[separate repository|https://github.com/nickgark/AAB-scripts]].
+  
 !Licensing and Contact
 
 Copyright © 2020 Nicholas Gibbins
@@ -28,4 +28,4 @@ Email: [[mailto:nick@gark.net]]
 
 Twitter: [[@nmg|https://twitter.com/nmg]]
 
-Github: [[https://github.com/nickgark/AAB]]
+Github: [[https://github.com/nickgark]]
