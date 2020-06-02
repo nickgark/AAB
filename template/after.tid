@@ -13,7 +13,7 @@ $:/state/folded/$(currentTiddler)$
 </$tiddler>
 </$list>
 <$list filter="[all[current]tag[Subsector]]">
-<subsector>>
+<<subsector>>
 </$list>
 <$list filter="[all[current]tag[Sector]]">
 <<sector>>
