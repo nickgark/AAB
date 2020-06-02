@@ -1,6 +1,3 @@
-title: $:/plugins/nickgark/AAB/readme
-type: text/vnd.tiddlywiki
-
 # Argushiigi Admegulasha Bilanidin (AAB)
 
 This is a plugin for TiddlyWiki which contains templates that assist the creation of a library data encyclopedia for use with the Traveller roleplaying game.
@@ -18,8 +15,8 @@ The data for these templates is stored as tiddler fields, thus allowing the sepa
 
 See also:
 
-* [[https://tiddlywiki.com/]]
-* [[https://traveller5.net/]]
+* https://tiddlywiki.com/
+* https://traveller5.net/
 
 # Licensing and Contact
 
@@ -29,8 +26,8 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License [[https://www.gnu.org/licenses/]] for more details.
 
-Email: [[mailto:nick@gark.net]]
+Email: mailto:nick@gark.net
 
-Twitter: [[@nmg|https://twitter.com/nmg]]
+Twitter: @nmg|https://twitter.com/nmg
 
-Github: [[https://github.com/nickgark/AAB]]
+Github: https://github.com/nickgark/AAB
