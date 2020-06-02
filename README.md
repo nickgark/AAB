@@ -11,13 +11,13 @@ The plugin includes specific templates for the rendering of:
 * Subsector maps
 * Sector maps at subsector level
 
-The data for these templates is stored as tiddler fields, thus allowing the separation of structured data from the unstructured text in the library data entries. There are a number of script (in a separate repository) for converting T5SS system data into a form that's usable by this plugin.
+The data for these templates is stored as tiddler fields, thus allowing the separation of structured data from the unstructured text in the library data entries. There are a number of scripts (in a separate repository) for converting T5SS system data into a form that's usable by this plugin.
 
 See also:
 
 * https://tiddlywiki.com/
 * https://traveller5.net/
-* https:/github/com/nickgark/AAB-scripts
+* https://github/com/nickgark/AAB-scripts
 
 # Licensing and Contact
 
