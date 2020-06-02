@@ -13,6 +13,8 @@ The plugin includes specific templates for the rendering of:
 
 The data for these templates is stored as tiddler fields, thus allowing the separation of structured data from the unstructured text in the library data entries. There are a number of scripts (in a separate repository) for converting T5SS system data into a form that's usable by this plugin.
 
+An example of the plugin in use is available at http://games.gark.net/AAB/
+
 See also:
 
 * https://tiddlywiki.com/
