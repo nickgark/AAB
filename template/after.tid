@@ -1,4 +1,6 @@
+created: 20200603134531488
 list-after: $:/core/ui/ViewTemplate/body
+modified: 20200603134612635
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nickgark/AAB/template/after
 type: text/vnd.tiddlywiki
@@ -19,6 +21,8 @@ $:/state/folded/$(currentTiddler)$
 <<sector>>
 </$list>
 <$list filter="[all[current]tag[Cluster]][all[current]tag[Main]]">
-<$transclude tiddler="$:/plugins/nickgark/AAB/template/cluster" mode="block"/>
+!!Systems
+
+<<list-links filter:"[list[]]">>
 </$list>
 </$reveal>

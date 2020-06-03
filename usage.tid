@@ -1,3 +1,5 @@
+created: 20200603131023560
+modified: 20200603140854349
 title: $:/plugins/nickgark/AAB/usage
 type: text/vnd.tiddlywiki
 
@@ -7,9 +9,14 @@ The majority of the functionality provided by this plugin does not require extra
 
 The following tags produce some special behaviour when applied to tiddlers:
 
-* [[System]]
-* [[Subsector]]
-* [[Sector]]
+; [[System]]
+: Lists an expanded version of the UWP details for the system after the text content of the tiddler
+; [[Subsector]]
+: Draws a subsector map after the text content of the tiddler
+; [[Sector]]
+: Draws a sector map after the text content of the tiddler
+; [[Cluster]] and [[Main]]
+: Lists the worlds in the cluster or main after the text content of the tiddler
 
 !Fields
 
@@ -29,13 +36,22 @@ For each of the supported tags, the following are the fields required on tiddler
 |`atmosphere`|The [[atmosphere code|$:/plugins/nickgark/AAB/data/uwp/atmosphere]]|
 |`hydrographics`|The [[hydrographics code|$:/plugins/nickgark/AAB/data/uwp/hydrographics]]|
 |`population`|The [[population exponent|$:/plugins/nickgark/AAB/data/uwp/population]]|
+|`popmult`|The population mantissa|
 |`government`|The [[government code|$:/plugins/nickgark/AAB/data/uwp/government]]|
 |`lawlevel`|The [[law level code|$:/plugins/nickgark/AAB/data/uwp/lawlevel]]|
 |`techlevel`|The [[tech level code|$:/plugins/nickgark/AAB/data/uwp/techlevel]]|
 |`zone`|The [[travel zone|$:/plugins/nickgark/AAB/data/uwp/travelzones]]|
 |`bases`|The [[bases|$:/plugins/nickgark/AAB/data/uwp/installations]] in the system (space-separated)|
 |`tradecodes`|The [[trade codes|$:/plugins/nickgark/AAB/data/uwp/tradecodes]] for the system (space separated)|
-|`popmult`|The population mantissa|
+|`importance`|The importance of a system within its region|
+|`resources`|A measure of exploitable natural resources|
+|`labour`|The workforce available for resource exploitation|
+|`infrastructure`|The technological infrastructure supporting labour|
+|`efficiency`|The efficiency of the system's economy|
+|`heterogeneity`|The degree of social diversity in the system|
+|`acceptance`|The degree of xenophobia/xenophilia in the system|
+|`strangeness`|The degree of difference from interstellar norms of social structure and behaviour|
+|`symbols`|Abstractness/concreteness of symbols used by the system's culture|
 |`belts`|The number of planetoid belts in the system|
 |`gasgiants`|The number of gas giants in the system|
 |`stars`|The stars in the system|
@@ -62,3 +78,8 @@ Note that the characters used in the `bases` field should appear in the `abbrevi
 |!Field|!Description|
 |`sx`|The X position of the sector relative to Core. (+ve is trailing)|
 |`sy`|The Y position of the sector relative to Core. (+ve is rimward)|
+
+!!Cluster and Main
+
+|!Field|!Description|
+|`list`|Space-separated list of the systems in the cluster or main|
