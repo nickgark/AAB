@@ -34,3 +34,10 @@ Email: nick@gark.net
 Twitter: https://twitter.com/nmg
 
 Github: https://github.com/nickgark
+
+# Acknowledgements
+
+The SVG-drawing code was inspired by that in Tab Atkins' Railroad Diagrams library: https://github.com/tabatkins/railroad-diagrams
+
+This plugin includes the Libertinus Sans typeface, as an OFL-licensed replacement for the Optima typeface: https://github.com/alif-type/libertinus
+

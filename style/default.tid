@@ -3,19 +3,19 @@ title: $:/plugins/nickgark/AAB/style/default
 type: text/css
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: Optima;
+    font-family: "Libertinus Sans";
 }
 
 .tc-site-title {
     text-align: left;
     padding: 0px;
     border-bottom: 2px solid <<colour primary>>;
-    font-family: Optima;
+    font-family: "Libertinus Sans";
     font-style: italic;
 }
 
 .tc-site-subtitle {
     text-align: left;
-    font-family: Optima;
+    font-family: "Libertinus Sans";
     font-style: italic;
 }

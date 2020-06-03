@@ -15,7 +15,7 @@ The plugin includes specific templates for the rendering of:
 The data for these templates is stored as [[tiddler fields|$:/plugins/nickgark/AAB/usage]], thus allowing the separation of structured data from the unstructured text in the library data entries.
 
 The source for this plugin is available on [[Github|https://github.com/nickgark/AAB]]. A number of python [[scripts|$:/plugins/nickgark/AAB/scripts]] for converting T5SS data from TravellerMap are available in a [[separate repository|https://github.com/nickgark/AAB-scripts]].
-  
+
 !Licensing and Contact
 
 Copyright © 2020 Nicholas Gibbins
@@ -29,3 +29,9 @@ Email: [[mailto:nick@gark.net]]
 Twitter: [[@nmg|https://twitter.com/nmg]]
 
 Github: [[https://github.com/nickgark]]
+
+!Acknowledgements
+
+The SVG-drawing code in [[$:/plugins/nickgark/AAB/lib/svg.js]] was inspired by that in Tab Atkins' [[Railroad Diagrams library|https://github.com/tabatkins/railroad-diagrams]].
+
+This plugin includes the [[Libertinus Sans|https://github.com/alif-type/libertinus]] typeface, as an OFL-licensed replacement for the Optima typeface.
