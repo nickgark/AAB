@@ -1,14 +1,8 @@
-created: 20200603134531488
 list-after: $:/core/ui/ViewTemplate/body
-modified: 20200603134612635
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nickgark/AAB/template/after
 type: text/vnd.tiddlywiki
 
-\define folded-state()
-$:/state/folded/$(currentTiddler)$
-\end
-<$reveal tag="div" class="tc-tiddler-body" type="nomatch" state=<<folded-state>> text="hide" retain="yes" animate="yes">
 <$list filter="[all[current]tag[System]]">
 <$tiddler>
 <$transclude tiddler="$:/plugins/nickgark/AAB/template/system" mode="block"/>
@@ -25,4 +19,12 @@ $:/state/folded/$(currentTiddler)$
 
 <<list-links filter:"[list[]]">>
 </$list>
-</$reveal>
+<$list filter="[all[current]tag[Noble Family]]">
+!!Notable Members
+
+<ul>
+<$list filter="[tag<currentTiddler>nsort[birth]]">
+<li><<currentTiddler>> ({{!!birth}}-{{!!death}})</li>
+</$list>
+</ul>
+</$list>
