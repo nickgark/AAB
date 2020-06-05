@@ -113,7 +113,7 @@ type: text/css
 .VVoS,
 .VWP2,
 .VWan
-{ fill: #df9; stroke #df9; }
+{ fill: #df9; stroke: #df9; }
 
 .ZhAx,
 .ZhCa,
