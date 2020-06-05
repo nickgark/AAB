@@ -4,3 +4,7 @@ type: text/vnd.tiddlywiki
 * ''0.1.0'' -- Initial version, migrated from previous development.
 * ''1.0.0'' -- First full release, following rewrite of map-rendering.
 * ''1.0.1'' -- Minor bug fixes to templates.
+* ''1.0.2'' -- Embedded font, documentation updates.
+* ''1.0.3'' -- Minor bug fixes to map frame.
+* ''1.0.4'' -- Added all T5SS bases to map and system rendering.
+

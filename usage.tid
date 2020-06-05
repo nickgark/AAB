@@ -1,5 +1,3 @@
-created: 20200603131023560
-modified: 20200603140854349
 title: $:/plugins/nickgark/AAB/usage
 type: text/vnd.tiddlywiki
 
@@ -63,8 +61,6 @@ For each of the supported tags, the following are the fields required on tiddler
 |`ownerhex`|The hex location of a controlling system|
 |`ownersector`|The sector of a controlling system|
 |`homeworld`|Links to any sophonts for whom this is a homeworld|
-
-Note that the characters used in the `bases` field should appear in the `abbreviation` field of a tiddler tagged with [[Installation]].
 
 !!Subsector
 
