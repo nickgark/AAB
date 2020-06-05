@@ -58,6 +58,7 @@ module-type: macro
                 byHex[e.hex] = e;
             });
 
+            // draw hex backgrounds
             for (x = 1; x <= 8; x++) {
                 for (y = 1; y <= 10; y++) {
                     hex = trav.getHex(x + subsector.offsetx, 
@@ -68,14 +69,25 @@ module-type: macro
                     if (byHex[hex] !== undefined) {
                         map.renderBackground(byHex[hex]).addTo(g);
                     } 
+                }
+            }
+
+            // draw hex outlines
+            for (x = 1; x <= 8; x++) {
+                for (y = 1; y <= 10; y++) {
+                    hex = trav.getHex(x + subsector.offsetx, 
+                                      y + subsector.offsety);
+                    g = svg.G().translate(trav.offsetXCentre(x, y, hexwidth),
+                                          trav.offsetYCentre(x, y, hexwidth))
+                               .addTo(mapsvg);
                     map.renderHex().addTo(g);                  
                 }
             }
 
-            // iterate over all systems in subsector
-            
+            // clip path for xboat routes
             g = svg.G({"clip-path":"url(#" + clip + ")"}).addTo(mapsvg);
-            
+
+            // draw xboat routes
             systems.forEach(function(start) {
                 if (start.routes != "") {
                     start.routes.split(" ").forEach(function(end) {
@@ -85,7 +97,7 @@ module-type: macro
                 }
             });
 
-            // iterate over all hexes in subsector
+            // draw hex details
             for (x = 1; x <= 8; x++) {
                 for (y = 1; y <= 10; y++) {       
                     hex = trav.getHex(x + subsector.offsetx, 
