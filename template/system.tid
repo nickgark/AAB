@@ -21,8 +21,12 @@ type: text/vnd.tiddlywiki
 <tr><th style="text-align: left;">Trade Codes</th><td><$list filter="[list[!!tradecodes]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/tradecodes" index=<<currentTiddler>> /><br/></$list></td></tr>
 <$list filter="[all[current]has[homeworld]]"><tr><th style="text-align: left;">Homeworld</th><td><$list filter="[list[!!homeworld]]"><$link><<currentTiddler>></$link><br/></$list></td></tr></$list>
 <tr><th style="text-align: left;">Travel Zone</th><td><$list filter="[list[!!zone]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/travelzones" index=<<currentTiddler>> /><br/></$list></td></tr>
-<tr><th style="text-align: left;">Bases</th><td><$list filter="[list[!!bases]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/installations" index=<<currentTiddler>> /><br/></$list>
-<$list filter="[all[current]has[routes]regexp:allegiance[Im]]">[[Imperial Express Boat Station]]</$list>
-<$list filter="[all[current]has[routes]regexp:allegiance[Zh]]">[[Zhodani Relay Station]]</$list>
+<tr><th style="text-align: left;">Bases</th><td>
+<$list filter="[all[current]regexp:allegiance[Im]]"><$list filter="[list[!!bases]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/installations-Im" index=<<currentTiddler>> /><br/></$list>
+<$list filter="[all[current]has[routes]]">[[Imperial Express Boat Station]]</$list></$list>
+<$list filter="[all[current]regexp:allegiance[Zh]]"><$list filter="[list[!!bases]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/installations-Zh" index=<<currentTiddler>> /><br/>
+</$list></$list>
+<$list filter="[all[current]!regexp:allegiance[Im|Zh]]">
+<$list filter="[list[!!bases]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/installations" index=<<currentTiddler>> /><br/></$list></$list>
 </td></tr>
 </table>
