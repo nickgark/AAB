@@ -1,7 +1,7 @@
 title: $:/plugins/nickgark/AAB/readme
 type: text/vnd.tiddlywiki
 
-This is a plugin for [[TiddlyWiki|https://tiddlywiki.com/]] which contains templates that assist the creation of a library data encyclopedia for use with the [[Traveller roleplaying game|http://www.traveller5.net/]].
+This is a plugin for [[TiddlyWiki|https://tiddlywiki.com/]] which contains templates that assist the creation of a library data encyclopedia for use with the [[Traveller roleplaying game|http://www.traveller5.net/]]. The intent behind this plugin is that Traveller referees will be able to give their players an in-game library database.
 
 TiddlyWiki is an open source wiki that stores an entire wiki in a single HTML file and requires no other software apart from a modern web browser. It works well for both online and offline use.
 
