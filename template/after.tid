@@ -5,7 +5,7 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[all[current]tag[System]]">
 <$tiddler>
-<$transclude tiddler="$:/plugins/nickgark/AAB/template/system" mode="block"/>
+<$transclude tiddler="$:/config/nickgark/AAB/template/system" mode="block"/>
 </$tiddler>
 </$list>
 <$list filter="[all[current]tag[Subsector]]">
@@ -27,4 +27,13 @@ type: text/vnd.tiddlywiki
 <li><<currentTiddler>> ({{!!birth}}-{{!!death}})</li>
 </$list>
 </ul>
+</$list>
+<$list filter="[all[current]!is[system]]">
+<$reveal type="match" state="$:/config/nickgark/AAB/showSources" text="show">
+
+!Sources
+
+<$list filter="[list[!!sources]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/sources" index=<<currentTiddler>> /><br/></$list>
+{{!!sourceURI}}
+</$reveal>
 </$list>
