@@ -3,9 +3,29 @@ tags: $:/tags/ViewTemplate
 title: $:/plugins/nickgark/AAB/template/after
 type: text/vnd.tiddlywiki
 
+<$list filter="[all[current]tag[Cluster]has[list]][all[current]tag[Main]has[list]]">
+!!Systems
+
+<<list-links filter:"[list[]]">>
+</$list>
+<$list filter="[all[current]tag[Noble Family]]">
+!Notable Members
+
+<ul>
+<$list filter="[tag<currentTiddler>nsort[birth]]">
+<li><<currentTiddler>> ({{!!birth}}-{{!!death}})</li>
+</$list>
+</ul>
+</$list>
+<$list filter="[all[current]has[seealso]]">
+
+!See Also
+
+<<list-links filter:"[list[!!seealso]]">>
+</$list>
 <$list filter="[all[current]tag[System]]">
 <$tiddler>
-<$transclude tiddler="$:/config/nickgark/AAB/template/system" mode="block"/>
+<$transclude tiddler="$:/plugins/nickgark/AAB/template/system" mode="block"/>
 </$tiddler>
 </$list>
 <$list filter="[all[current]tag[Subsector]]">
@@ -14,26 +34,12 @@ type: text/vnd.tiddlywiki
 <$list filter="[all[current]tag[Sector]]">
 <<sector>>
 </$list>
-<$list filter="[all[current]tag[Cluster]][all[current]tag[Main]]">
-!!Systems
-
-<<list-links filter:"[list[]]">>
-</$list>
-<$list filter="[all[current]tag[Noble Family]]">
-!!Notable Members
-
-<ul>
-<$list filter="[tag<currentTiddler>nsort[birth]]">
-<li><<currentTiddler>> ({{!!birth}}-{{!!death}})</li>
-</$list>
-</ul>
-</$list>
-<$list filter="[all[current]!is[system]]">
+<$list filter="[all[current]has[sources]]">
 <$reveal type="match" state="$:/config/nickgark/AAB/showSources" text="show">
 
 !Sources
 
-<$list filter="[list[!!sources]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/sources" index=<<currentTiddler>> /><br/></$list>
-{{!!sourceURI}}
+<$list filter="[list[!!sources]!regexp[^http]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/sources" index=<<currentTiddler>> /><br/></$list>
+<$list filter="[list[!!sources]regexp[^http]]"><$link/><br/></$list>
 </$reveal>
 </$list>
