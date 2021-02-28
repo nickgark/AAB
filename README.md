@@ -19,7 +19,7 @@ See also:
 
 * https://tiddlywiki.com/
 * https://traveller5.net/
-* https://github/com/nickgark/AAB-scripts
+* https://github.com/nickgark/AAB-scripts
 
 # Licensing and Contact
 
