@@ -1,4 +1,6 @@
+created: 20210724090502521
 list-before: $:/core/ui/ViewTemplate/body
+modified: 20210724125142672
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nickgark/AAB/template/before
 type: text/vnd.tiddlywiki
@@ -11,3 +13,13 @@ $:/state/folded/$(currentTiddler)$
 Subsector {{!!subsector}} of <$link to={{!!sector}}>{{!!sector}}</$link>
 </$list>
 </$reveal>
+<$list filter="[all[current]tag[Person]]">
+<$list filter="[all[current]has[birth]]">''b.'' {{!!birth}}</$list>
+<$list filter="[all[current]has[coronation]]">''r.'' {{!!coronation}} -
+<$list filter="[all[current]has[abdication]]">{{!!abdication}}</$list>
+<$list filter="[all[current]!has[abdication]has[death]]">{{!!death}}</$list></$list>
+<$list filter="[all[current]has[death]]">''d.'' {{!!death}}</$list>
+</$list>
+<$list filter="[all[current]tag[Sophont]has[homeworld]]">
+''Homeworld:'' <$link to={{!!homeworld}}/>
+</$list>

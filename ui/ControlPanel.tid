@@ -1,8 +1,0 @@
-caption: AAB
-tags: $:/tags/ControlPanel
-title: $:/plugins/nickgark/AAB/ui/ControlPanel
-type: text/vnd.tiddlywiki
-
-Settings for the AAB Traveller library data plugin
-
-<$checkbox tiddler="$:/config/nickgark/AAB/showSources" checked="show" unchecked="hide" field="text" default="show"> Show library data sources?</$checkbox>

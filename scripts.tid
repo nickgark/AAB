@@ -1,15 +1,17 @@
+created: 20210723085109917
+modified: 20210723095916730
 title: $:/plugins/nickgark/AAB/scripts
 type: text/vnd.tiddlywiki
 
-The following scripts are available from [[https://github.com/nickgark/AAB-scripts]].
+The following scripts are available from [[https://github.com/nickgark/AAB-scripts]]. These scripts make use of the [[TravellerMap API|https://travellermap.com/doc/api]].
 
 !sys2tids
 
-Generates system tiddlers from TravellerMap.
+Generates system tiddlers from [[TravellerMap|https://travellermap.com/]].
 
 !!Usage
 
-`sys2tids.py [-h] [-a] [-r] [-m {M0,M990,M1105,M1120,M1201,M1248,M1900}] [sectors]`
+`sys2tids.py [-h] [-a] [-r] [-s] [-m {M0,M990,M1105,M1120,M1201,M1248,M1900}] [sectors]`
 
 ;`sectors`               
 :Sectors for which system tiddlers are to be generated
@@ -19,6 +21,8 @@ Generates system tiddlers from TravellerMap.
 :Generate routes for all sectors
 ;`-r`, `--routes`
 :Generate route information for systems
+; `-s`, `--sectors`
+:Generate tiddlers for sectors and subsectors. (note: this effectively subsumes the functionality of `secs2tids` below)
 ;`-m`, `--milieu`
 :Milieu for system data
 
@@ -71,7 +75,7 @@ Generates system tiddlers from TravellerMap.
 
 !secs2tids
 
-Generate sector and subsector tiddlers from TravellerMap.
+Generate sector and subsector tiddlers from [[TravellerMap|https://travellermap.com/]].
 
 !!Usage
 

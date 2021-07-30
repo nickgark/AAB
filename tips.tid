@@ -1,0 +1,90 @@
+created: 20210723095736955
+modified: 20210723111258045
+tags: 
+title: $:/plugins/nickgark/AAB/tips
+type: text/vnd.tiddlywiki
+
+!Importing library data
+
+The GitHub repository at [[https://github.com/nickgark/AAB-data]] has a collection of multi-tiddler json files (see [[TiddlyWeb-style JSON files|https://tiddlywiki.com/static/TiddlerFiles.html]]) containing library data entries organised by theme. As is noted there, the files are organised such that they may override each other's entries, so it's important that you add them to your Tiddlywiki in the order listed.
+
+!Creating your own data
+
+The `sys2tids` and `sec2tids` scripts described in [[$:/plugins/nickgark/AAB/scripts]] pull data from TravellerMap and format it as multi-tiddler files that can be used by this library data plugin. However, the tiddlers so created contain only the structured UWP data; they do not include any textual information.
+
+If you're creating your own library data for systems, sectors and subsectors, you are strongly encouraged to create the textual information in a separate file, and then merge it with the files created by sys2tids, using `mergetids` as follows:
+
+1. First create your file containing text descriptions. Note that you also need to include the names of the systems (formatted as Name (Sector Hex)) - these are used as keys in the merge stage.
+
+;`spintext.json`
+
+```
+[
+  {
+    "title": "Zeycude (Spinward Marches 0101)",
+    "text": "The entire population of this world lives on huge mining and manufacturing crawlers that scour this mineral rich world for resources to be made in to exportable products."
+  },
+
+  ...
+
+]
+```
+
+2. Use `sys2tids` to create a second file containing the UWP data:
+
+`sys2tids spin > spindata.json`
+
+;`spindata.json`
+
+```
+[
+  {
+    "title": "Zeycude (Spinward Marches 0101)",
+    "name": "Zeycude",
+    "sector": "Spinward Marches",
+    "subsector": "A",
+    "hex": "0101",
+    "hx": "01",
+    "hy": "01",
+    "starport": "C",
+    "diameter": "4",
+
+    ...
+		
+  },
+
+  ...
+
+]
+```
+
+3. use `mergetids` to combine the two files:
+
+`mergetids spindata.json spintext.json > spin.json`
+
+;`spin.json`
+
+```
+[
+  {
+    "title": "Zeycude (Spinward Marches 0101)",
+    "text": "The entire population of this world lives on huge mining and manufacturing crawlers that scour this mineral rich world for resources to be made in to exportable products."
+		"name": "Zeycude",
+    "sector": "Spinward Marches",
+    "subsector": "A",
+    "hex": "0101",
+    "hx": "01",
+    "hy": "01",
+    "starport": "C",
+    "diameter": "4",
+
+    ...
+		
+  },
+
+  ...
+
+]
+```
+
+The resulting file can be dragged and dropped onto your TiddlyWiki in order to import the tiddlers contained.

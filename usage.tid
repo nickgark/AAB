@@ -1,3 +1,5 @@
+created: 20210722171641457
+modified: 20210723095521147
 title: $:/plugins/nickgark/AAB/usage
 type: text/vnd.tiddlywiki
 
@@ -80,11 +82,12 @@ For each of the supported tags, the following are the fields required on tiddler
 |!Field|!Description|
 |`list`|Space-separated list of the systems in the cluster or main|
 
-!Sources
+!!Sources
 
-In addition to the fields above, all tiddlers may contain the following two fields:
+In addition to the fields above, all tiddlers may contain the following fields:
 
 |!Field|!Description|
+|`seealso`|A space-separated list of related tiddlers|
 |`sources`|A space-separated list of the sources from which the tiddler was derived (see [[$:/plugins/nickgark/AAB/data/sources]] for possible values)|
 |`sourceURI`|The URI of the web page from which the tiddler was derived|
 

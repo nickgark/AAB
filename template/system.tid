@@ -1,3 +1,5 @@
+created: 20210728124806523
+modified: 20210729055839879
 title: $:/plugins/nickgark/AAB/template/system
 type: text/vnd.tiddlywiki
 
@@ -10,8 +12,8 @@ type: text/vnd.tiddlywiki
 <tr><th style="text-align: left;">UWP</th><td>{{!!starport}}{{!!diameter}}{{!!atmosphere}}{{!!hydrographics}}{{!!population}}{{!!government}}{{!!lawlevel}}-{{!!techlevel}}</td></tr>
 <tr><th style="text-align: left;">Starport</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/starport" index={{!!starport}} /></td></tr>
 <tr><th style="text-align: left;">Diameter</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/diameter" index={{!!diameter}} /></td></tr>
-<tr><th style="text-align: left;">Atmosphere</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/atmosphere" index={{!!atmosphere}} /></td></tr>
-<tr><th style="text-align: left;">Hydrographics</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/hydrographics" index={{!!hydrographics}} /></td></tr>
+<tr><th style="text-align: left;">Atmosphere</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/atmosphere" index={{!!atmosphere}} /><$list filter="[all[current]has[atmoscomp]!atmosphere[0]]"> ({{!!atmoscomp}})</$list></td></tr>
+<tr><th style="text-align: left;">Hydrographics</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/hydrographics" index={{!!hydrographics}} /><$list filter="[all[current]has[hydrocomp]!hydrographics[0]]"> ({{!!hydrocomp}})</$list></td></tr>
 <tr><th style="text-align: left;">Population</th><td>{{!!popmult}}<$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/population" index={{!!population}} />
 <$list filter="[all[current]has[demographics]]"><br/>{{!!demographics}}</$list></td></tr>
 <tr><th style="text-align: left;">Government</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/government" index={{!!government}} />

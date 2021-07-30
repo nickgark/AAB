@@ -1,0 +1,9 @@
+caption: AAB
+created: 20210730115925267
+modified: 20210730122438019
+title: $:/plugins/nickgark/AAB/config
+type: text/vnd.tiddlywiki
+
+<$checkbox tiddler="$:/config/nickgark/AAB/showSources" checked="show" unchecked="hide" field="text" default="show"> Show library data sources?</$checkbox>
+
+<$checkbox tiddler="$:/config/nickgark/AAB/showNotes" checked="show" unchecked="hide" field="text" default="show"> Show notes?</$checkbox>

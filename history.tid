@@ -1,3 +1,5 @@
+created: 20210730132616205
+modified: 20210730132942719
 title: $:/plugins/nickgark/AAB/history
 type: text/vnd.tiddlywiki
 
@@ -7,4 +9,5 @@ type: text/vnd.tiddlywiki
 * ''1.0.2'' -- Embedded font, documentation updates.
 * ''1.0.3'' -- Minor bug fixes to map frame.
 * ''1.0.4'' -- Added all T5SS bases to map and system rendering.
+* ''1.0.5'' -- Added atmos/hydro composition to system template. Added notes field. Refactored config.
 

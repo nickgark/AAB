@@ -1,4 +1,6 @@
+created: 20210724072105841
 list-after: $:/core/ui/ViewTemplate/body
+modified: 20210730133444735
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nickgark/AAB/template/after
 type: text/vnd.tiddlywiki
@@ -41,5 +43,13 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[list[!!sources]!regexp[^http]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/sources" index=<<currentTiddler>> /><br/></$list>
 <$list filter="[list[!!sources]regexp[^http]]"><$link/><br/></$list>
+</$reveal>
+</$list>
+<$list filter="[all[current]has[notes]]">
+<$reveal type="match" state="$:/config/nickgark/AAB/showNotes" text="show">
+
+!Notes
+
+{{!!notes}}
 </$reveal>
 </$list>
