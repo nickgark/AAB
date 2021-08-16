@@ -1,0 +1,6 @@
+title: $:/plugins/nickgark/AAB/template/sophont
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[homeworld]]">
+''Homeworld:'' <$link to={{!!homeworld}}/>
+</$list>

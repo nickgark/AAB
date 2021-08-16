@@ -1,0 +1,10 @@
+title: $:/plugins/nickgark/AAB/template/sources
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="$:/config/nickgark/AAB/showSources" text="show">
+
+!Sources
+
+<$list filter="[list[!!sources]!regexp[^http]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/sources" index=<<currentTiddler>> /><br/></$list>
+<$list filter="[list[!!sources]regexp[^http]]"><$link/><br/></$list>
+</$reveal>

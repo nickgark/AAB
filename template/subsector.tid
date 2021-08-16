@@ -1,0 +1,4 @@
+title: $:/plugins/nickgark/AAB/template/subsector
+type: text/vnd.tiddlywiki
+
+''Subsector {{!!subsector}} of <$link to={{!!sector}}>{{!!sector}}''

@@ -1,5 +1,3 @@
-created: 20210728124806523
-modified: 20210729055839879
 title: $:/plugins/nickgark/AAB/template/system
 type: text/vnd.tiddlywiki
 
@@ -9,6 +7,8 @@ type: text/vnd.tiddlywiki
 <tr><th style="text-align: left;">Subsector</th><td><$list filter="[tag[Subsector]sector{!!sector}subsector{!!subsector}]"><$link to=<<currentTiddler>> ><<currentTiddler>></$link></$list></td></tr>
 <tr><th style="text-align: left;">Allegiance</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/allegiances" index={{!!allegiance}} /><$list filter="[all[current]regexp:allegiance[^Cs]has[client]]"> (<$link to={{!!client}}>{{!!client}}</$link>)</$list></td></tr>
 <tr><th style="text-align: left;">Stars</th><td>{{!!stars}}</td></tr>
+<tr><th style="text-align: left;">Gas Giants</th><td>{{!!gasgiants}}</td></tr>
+<tr><th style="text-align: left;">Belts</th><td>{{!!belts}}</td></tr>
 <tr><th style="text-align: left;">UWP</th><td>{{!!starport}}{{!!diameter}}{{!!atmosphere}}{{!!hydrographics}}{{!!population}}{{!!government}}{{!!lawlevel}}-{{!!techlevel}}</td></tr>
 <tr><th style="text-align: left;">Starport</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/starport" index={{!!starport}} /></td></tr>
 <tr><th style="text-align: left;">Diameter</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/diameter" index={{!!diameter}} /></td></tr>
@@ -20,6 +20,13 @@ type: text/vnd.tiddlywiki
 <$list filter="[all[current]has[ownerhex]]"><$list filter="[tag[System]hex{!!ownerhex}sector{!!ownersector}]"><br/>Controlled by <$link to=<<currentTiddler>> ><<currentTiddler>></$link></$list></$list><$list filter="[all[current]government[1]has[corporation]]"><br/>Controlled by <$link to={{!!corporation}}>{{!!corporation}}</$link></$list></td></tr>
 <tr><th style="text-align: left;">Law Level</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/lawlevel" index={{!!lawlevel}} /></td></tr>
 <tr><th style="text-align: left;">Tech Level</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/techlevel" index={{!!techlevel}} /></td></tr>
+<tr><th style="text-align: left;">Importance</th><td><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/importance" index={{!!importance}} /></td></tr>
+<tr><th style="text-align: left;">Economics</th><td>Resources: <$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/resources" index={{!!resources}} /><br/>Labour: 1<$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/population" index={{!!labour}} /><br/>Infrastructure: <$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/infrastructure" index={{!!infrastructure}} /><br/>Efficiency: <$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/efficiency" index={{!!efficiency}} /></td></tr>
+<tr><th style="text-align: left;">Culture</th><td>Heterogeneity: <$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/heterogeneity" index={{!!heterogeneity}} /><br/>
+Acceptance: <$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/acceptance" index={{!!acceptance}} /><br/>
+Strangeness: <$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/strangeness" index={{!!strangeness}} /><br/>
+Symbols: <$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/symbols" index={{!!symbols}} /><br/>
+</td></tr>
 <tr><th style="text-align: left;">Trade Codes</th><td><$list filter="[list[!!tradecodes]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/tradecodes" index=<<currentTiddler>> /><br/></$list></td></tr>
 <$list filter="[all[current]has[homeworld]]"><tr><th style="text-align: left;">Homeworld</th><td><$list filter="[list[!!homeworld]]"><$link><<currentTiddler>></$link><br/></$list></td></tr></$list>
 <tr><th style="text-align: left;">Travel Zone</th><td><$list filter="[list[!!zone]]"><$transclude tiddler="$:/plugins/nickgark/AAB/data/uwp/travelzones" index=<<currentTiddler>> /><br/></$list></td></tr>

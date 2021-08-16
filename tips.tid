@@ -1,12 +1,11 @@
-created: 20210723095736955
-modified: 20210723111258045
-tags: 
 title: $:/plugins/nickgark/AAB/tips
 type: text/vnd.tiddlywiki
 
 !Importing library data
 
 The GitHub repository at [[https://github.com/nickgark/AAB-data]] has a collection of multi-tiddler json files (see [[TiddlyWeb-style JSON files|https://tiddlywiki.com/static/TiddlerFiles.html]]) containing library data entries organised by theme. As is noted there, the files are organised such that they may override each other's entries, so it's important that you add them to your Tiddlywiki in the order listed.
+
+Note that this data is deesigned to make use of Matt Lauber's [[Tiddlywiki aliases|https://mklauber.github.io/tw5-plugins/#Aliases]] (using the `aliases` field), so that an entry can have alternative names.
 
 !Creating your own data
 
@@ -50,7 +49,7 @@ If you're creating your own library data for systems, sectors and subsectors, yo
     "diameter": "4",
 
     ...
-		
+
   },
 
   ...
@@ -79,7 +78,7 @@ If you're creating your own library data for systems, sectors and subsectors, yo
     "diameter": "4",
 
     ...
-		
+
   },
 
   ...

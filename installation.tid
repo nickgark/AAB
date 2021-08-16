@@ -2,4 +2,4 @@ title: $:/plugins/nickgark/AAB/installation
 type: text/vnd.tiddlywiki
 
 # Download a copy of TiddlyWiki - see [[GettingStarted|https://tiddlywiki.com/#GettingStarted]]
-# Follow the instructions for [[manually installing plugins|https://tiddlywiki.com/#Manually%20installing%20a%20plugin]]
+# Follow the instructions for [[manually installing plugins|https://tiddlywiki.com/#Manually%20installing%20a%20plugin]] - you'll need to drag [[$:/plugins/nickgark/AAB]] to your tiddlywiki

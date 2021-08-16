@@ -1,0 +1,10 @@
+title: $:/plugins/nickgark/AAB/template/person
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[birth]]">''b.'' {{!!birth}}</$list>
+<$list filter="[all[current]has[coronation]]">''r.'' {{!!coronation}} to
+<$list filter="[all[current]has[abdication]]">{{!!abdication}}</$list>
+<$list filter="[all[current]!has[abdication]has[death]]">{{!!death}}</$list>
+<$list filter="[all[current]!has[abdication]!has[death]]">present</$list>
+</$list>
+<$list filter="[all[current]has[death]]">''d.'' {{!!death}}</$list>

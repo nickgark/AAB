@@ -1,0 +1,9 @@
+title: $:/plugins/nickgark/AAB/template/notes
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="$:/config/nickgark/AAB/showNotes" text="show">
+
+!Notes
+
+{{!!notes}}
+</$reveal>

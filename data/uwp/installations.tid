@@ -2,7 +2,7 @@ title: $:/plugins/nickgark/AAB/data/uwp/installations
 type: application/x-tiddler-dictionary
 
 C: [[Vargr Corsair Base]]
-D: [[Naval Depot]]
+D: [[Imperial Naval Depot]]
 E: [[Hiver Embassy]]
 K: [[Naval Base]]
 M: [[Military Base]]
@@ -11,4 +11,6 @@ R: [[Aslan Clan Base]]
 S: [[Imperial Scout Base]]
 T: [[Aslan Tlaukhu Base]]
 V: [[Exploration Base]]
-W: [[Way Station]]
+W: [[Imperial Way Station]]
+X: [[Zhodani Relay Station]]
+Z: [[Zhodani Base]]

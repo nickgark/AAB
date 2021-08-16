@@ -1,0 +1,9 @@
+title: $:/plugins/nickgark/AAB/template/systems
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[list]]">
+
+!Systems
+
+<<list-links filter:"[list[]]">>
+</$list>

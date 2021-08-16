@@ -1,0 +1,6 @@
+title: $:/plugins/nickgark/AAB/template/eventbefore
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[start]]">
+''{{!!start}} to {{!!end}}
+<$list filter="[all[current]has[location]]">(<$list filter="[all[current]has[location]each:list-item[location]butlast[]]"><$link/>, </$list><$list filter="[all[current]has[location]each:list-item[location]last[]]"><$link/></$list>)</$list>''</$list>

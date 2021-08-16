@@ -1,9 +1,7 @@
-created: 20210722171641457
-modified: 20210723095521147
 title: $:/plugins/nickgark/AAB/usage
 type: text/vnd.tiddlywiki
 
-The majority of the functionality provided by this plugin does not require extra markup in tiddlers, but uses the tags on the tiddlers to render structured information in tiddler fields in a reader-friendly manner. 
+The majority of the functionality provided by this plugin does not require extra markup in tiddlers, but uses the tags on the tiddlers to render structured information in tiddler fields in a reader-friendly manner.
 
 !Tags
 
@@ -17,10 +15,18 @@ The following tags produce some special behaviour when applied to tiddlers:
 : Draws a sector map after the text content of the tiddler
 ; [[Cluster]] and [[Main]]
 : Lists the worlds in the cluster or main after the text content of the tiddler
+; [[Person]]
+: Lists key dates associated with the person (birth, death, coronation, etc) before the text content of the tiddler
+; [[Sophont]]
+: Lists the homeworld of a sophont race (if known) before the text content of the tiddler
+; [[Noble Family]]
+: Lists the members of the noble family after the text content of the tiddler
+; [[Event]]
+: Lists the start, end and location of an event before the text content of the tiddler. Also, if there are other tiddlers that have been tagged with the tiddler, a date-ordered list of them will appear after the text content of the tiddler
 
 !Fields
 
-For each of the supported tags, the following are the fields required on tiddlers with those tags. Where necessary, this plugin contains data tiddlers that can be used to decode field values into human-readable text.
+For each of the supported tags, the following are the fields that can be used on tiddlers with those tags. Where necessary, this plugin contains data tiddlers that can be used to decode field values into human-readable text.
 
 !!System
 
@@ -43,15 +49,15 @@ For each of the supported tags, the following are the fields required on tiddler
 |`zone`|The [[travel zone|$:/plugins/nickgark/AAB/data/uwp/travelzones]]|
 |`bases`|The [[bases|$:/plugins/nickgark/AAB/data/uwp/installations]] in the system (space-separated)|
 |`tradecodes`|The [[trade codes|$:/plugins/nickgark/AAB/data/uwp/tradecodes]] for the system (space separated)|
-|`importance`|The importance of a system within its region|
-|`resources`|A measure of exploitable natural resources|
+|`importance`|The [[importance|$:/plugins/nickgark/AAB/data/uwp/importance]] of a system within its region|
+|`resources`|A measure of exploitable natural [[resources|$:/plugins/nickgark/AAB/data/uwp/resources]]|
 |`labour`|The workforce available for resource exploitation|
-|`infrastructure`|The technological infrastructure supporting labour|
-|`efficiency`|The efficiency of the system's economy|
-|`heterogeneity`|The degree of social diversity in the system|
-|`acceptance`|The degree of xenophobia/xenophilia in the system|
-|`strangeness`|The degree of difference from interstellar norms of social structure and behaviour|
-|`symbols`|Abstractness/concreteness of symbols used by the system's culture|
+|`infrastructure`|The technological [[infrastructure|$:/plugins/nickgark/AAB/data/uwp/infrastructure]] supporting labour|
+|`efficiency`|The [[efficiency|$:/plugins/nickgark/AAB/data/uwp/efficiency]] of the system's economy|
+|`heterogeneity`|The degree of [[social diversity|$:/plugins/nickgark/AAB/data/uwp/heterogeneity]] in the system|
+|`acceptance`|The degree of [[xenophobia/xenophilia|$:/plugins/nickgark/AAB/data/uwp/acceptance]] in the system|
+|`strangeness`|The [[degree of difference|$:/plugins/nickgark/AAB/data/uwp/strangeness]] from interstellar norms of social structure and behaviour|
+|`symbols`|Abstractness/concreteness of [[symbols|$:/plugins/nickgark/AAB/data/uwp/symbols]] used by the system's culture|
 |`belts`|The number of planetoid belts in the system|
 |`gasgiants`|The number of gas giants in the system|
 |`stars`|The stars in the system|
@@ -80,15 +86,38 @@ For each of the supported tags, the following are the fields required on tiddler
 !!Cluster and Main
 
 |!Field|!Description|
-|`list`|Space-separated list of the systems in the cluster or main|
+|`list`|A [[list|https://tiddlywiki.com/#Title%20List]] of the systems in the cluster or main|
+
+!!Person
+
+|!Field|!Description|
+|`birth`|The year of birth of the person|
+|`death`|The year of death of the person|
+|`coronation`|The year of coronation of the person, if appropriate|
+|`abdication`|The year of abdication of the person, if appropriate|
+|`marriage`|The year of marriage of the person|
+
+!!Sophont
+
+|!Field|!Description|
+|`homeworld`|The homeworld of the sophont race|
+
+!!Event
+
+|!Field|!Description|
+|`start`|The year in which the event started|
+|`end`|The year in which the event ended|
+|`location`|A [[list|https://tiddlywiki.com/#Title%20List]] of the locations in which the event happened|
 
 !!Sources
 
 In addition to the fields above, all tiddlers may contain the following fields:
 
 |!Field|!Description|
-|`seealso`|A space-separated list of related tiddlers|
+|`seealso`|A [[list|https://tiddlywiki.com/#Title%20List]] of related tiddlers|
+|`aliases`|Alternative titles which can be used to link to a tiddler (requires Matt Lauber's [[Aliases plugin|https://mklauber.github.io/tw5-plugins/#Aliases]])|
 |`sources`|A space-separated list of the sources from which the tiddler was derived (see [[$:/plugins/nickgark/AAB/data/sources]] for possible values)|
 |`sourceURI`|The URI of the web page from which the tiddler was derived|
+|`notes`|Designer's notes and commentary on the entry|
 
-The visibility of the sources may be controlled through the AAB tab in the TiddlyWiki control panel.
+The visibility of sources and notes may be controlled at the [[AAB config tiddler|$:/plugins/nickgark/AAB/config]].

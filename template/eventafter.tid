@@ -1,0 +1,13 @@
+title: $:/plugins/nickgark/AAB/template/eventafter
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[Event]tag<currentTiddler>first[]!is[blank]]">
+
+!Notable Events
+</$list>
+
+<ul>
+<$list filter="[tag[Event]tag<currentTiddler>nsort[start]]">
+<li><$link/> ({{!!start}} to {{!!end}})</li>
+</$list>
+</ul>

@@ -1,0 +1,13 @@
+title: $:/plugins/nickgark/AAB/template/noblefamily
+type: text/vnd.tiddlywiki
+
+!Notable Members
+
+<ul>
+<$list filter="[tag<currentTiddler>nsort[birth]]">
+<li><$link/> <$list filter="[all[current]has[birth]] [all[current]has[death]]">
+(<$list filter="[all[current]has[birth]]">''b.'' {{!!birth}}</$list><$list filter="[all[current]has[death]]"> ''d.'' {{!!death}}</$list>)
+</$list>
+</li>
+</$list>
+</ul>
