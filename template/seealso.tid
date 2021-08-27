@@ -1,6 +1,9 @@
 title: $:/plugins/nickgark/AAB/template/seealso
 type: text/vnd.tiddlywiki
 
-!See Also
+<$list filter="[list[!!seealso]] [all[current]listed[location]] +[is[tiddler]limit[1]]">
 
-<<list-links filter:"[list[!!seealso]]">>
+!See Also
+</$list>
+
+<<list-links filter:"[list[!!seealso]] [all[current]listed[location]] +[is[tiddler]sort[]unique[]]">>

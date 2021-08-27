@@ -59,7 +59,7 @@ If you're creating your own library data for systems, sectors and subsectors, yo
 
 3. use `mergetids` to combine the two files:
 
-`mergetids spindata.json spintext.json > spin.json`
+`mergetids spintext.json spindata.json > spin.json`
 
 ;`spin.json`
 

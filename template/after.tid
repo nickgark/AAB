@@ -16,9 +16,7 @@ $:/state/folded/$(currentTiddler)$
 <$list filter="[all[current]tag[Event]]">
 <$transclude tiddler="$:/plugins/nickgark/AAB/template/eventafter" mode="block"/>
 </$list>
-<$list filter="[all[current]has[seealso]]">
 <$transclude tiddler="$:/plugins/nickgark/AAB/template/seealso" mode="block"/>
-</$list>
 <$list filter="[all[current]tag[System]]">
 <$tiddler>
 <$transclude tiddler="$:/plugins/nickgark/AAB/template/system" mode="block"/>
